@@ -3,15 +3,17 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/main.css">
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cd89535d02.js" crossorigin="anonymous"></script>
     <title>Booki</title>
   </head>
   <body>
     <header>
       <nav>
         <div class="logo">
-          <img src="assets/logo/Booki.svg" alt="Booki-logo">
+          <img src="assets/img/logo/Booki@3x.png" alt="Booki-logo">
         </div>
         <div class="nav_option">
           <ul>
@@ -24,15 +26,15 @@
 
     <main>
       <section id="recherche">
-        <div id="recherche_logement" class="">
+        <div id="recherche_logement">
           <h1 class="title_section">Trouvez votre hébergement pour des vacances de rêve</h1>
           <h2 class="sub_title_section">En plein centre-ville ou en pleine nature</h2>
 
           <div class="search_bar">
             <form class="" action="index.html" method="get">
-              <button type="button" name="button" class="map_btn"><img src="assets/icons/map.svg" alt=""></button>
+              <button type="button" name="button" class="map_btn"><i class="fas fa-solid fa-location-dot"></i></button>
               <input type="text" name="place" value="" placeholder="Paris, Marseille, Lyon ...." class="search_input">
-              <button type="submit" name="button" class="search_btn"><ion-icon class='search_icon' name='search-outline'></ion-icon></button>
+              <button type="submit" name="button" class="search_btn"><i class="fas fa-solid fa-magnifying-glass search_icon"></i></button>
             </form>
             <div class="mapouter">
               <div class="gmap_canvas">
@@ -45,22 +47,22 @@
           </div>
 
           <div class="filtres">
-            <h1 class="title">Filtres</h1>
+            <h2 class="title">Filtres</h2>
             <div class="filtres-btn">
               <button class="btn" type="button" name="button">
-                <img src="assets/icons/money.svg" alt="bill" class="btn_logo">
+                <i class="fas fa-solid fa-money-bill-wave"></i>
                 Économique
               </button>
               <button class="btn" type="button" name="button">
-                <img src="assets/icons/man.svg" alt="man" class="btn_logo man_logo">
+                <i class="fas fa-solid fa-person"></i>
                 Famillial
               </button>
               <button class="btn" type="button" name="button">
-                <img src="assets/icons/heart.svg" alt="Heart" class="btn_logo">
+                <i class="fas fa-solid fa-heart"></i>
                 Romantique
               </button>
               <button class="btn" type="button" name="button">
-                <img src="assets/icons/chien.svg" alt="Dog" class="btn_logo">
+                <i class="fas fa-solid fa-dog"></i>
                 Animaux autorise
               </button>
             </div>
@@ -70,218 +72,207 @@
 
       <section id="logements">
         <div class="info">
-          <span class="i_info"><img src="assets/icons/info.svg" alt="Info" class="i_logo"></span>
+          <i class="fas fa-solid fa-info i_info"></i>
           <h3 class="i_text">Plus de <span>500</span> logements sont disponibles dans cette ville</h3>
         </div>
 
         <div id="hebergements" class="results">
-          <div class="trend">
-            <div class="trend_title">
-              <h1 class="title_section">Les plus populaires</h1>
-              <img src="assets/icons/stat.svg" alt="trend" class="trend_icon">
-            </div>
-
-            <div class="card_container">
-              <a href="#">
-                <div class="card">
-                  <div class="card_img"></div>
-                  <div class="card_info">
-                    <h2 class="card_title">Hôtel Le soleil du matin</h2>
-                    <p class="card_price">Nuit à partir de <span>128€</span></p>
-                    <div class="stars">
-                      <img src="assets/icons/star.svg" alt="star">
-                      <img src="assets/icons/star.svg" alt="star">
-                      <img src="assets/icons/star.svg" alt="star">
-                      <img src="assets/icons/star.svg" alt="star">
-                      <img src="assets/icons/greystar.svg" alt="star">
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a href="#">
-                <div class="card">
-                  <div class="card_img"></div>
-                  <div class="card_info">
-                    <h2 class="card_title">Hôtel Le soleil du matin</h2>
-                    <p class="card_price">Nuit à partir de <span>128€</span></p>
-                    <div class="stars">
-                      <img src="assets/icons/star.svg" alt="star">
-                      <img src="assets/icons/star.svg" alt="star">
-                      <img src="assets/icons/star.svg" alt="star">
-                      <img src="assets/icons/star.svg" alt="star">
-                      <img src="assets/icons/greystar.svg" alt="star">
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a href="#">
-                <div class="card">
-                  <div class="card_img"></div>
-                  <div class="card_info">
-                    <h2 class="card_title">Hôtel Le soleil du matin</h2>
-                    <p class="card_price">Nuit à partir de <span>128€</span></p>
-                    <div class="stars">
-                      <img src="assets/icons/star.svg" alt="star">
-                      <img src="assets/icons/star.svg" alt="star">
-                      <img src="assets/icons/star.svg" alt="star">
-                      <img src="assets/icons/star.svg" alt="star">
-                      <img src="assets/icons/greystar.svg" alt="star">
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-
           <div class="result">
             <div class="result_title">
-              <h1 class="title_section">Les plus populaires</h1>
+              <h2 class="title_section">Hébergements à <span>Marseille</span></h2>
             </div>
 
             <div class="card_container">
-              <a href="#">
-                <div class="card vertical_card">
-                  <div class="vertical_card_img"></div>
-                  <div class="vertical_card_info">
-                    <h2 class="card_title">Hôtel Le soleil du matin</h2>
-                    <p class="card_price">Nuit à partir de <span>128€</span></p>
+              <article class="card">
+                <a class="card_link" href="#">
+                  <img src="assets/img/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="" class="card_img">
+                  <div class="card_info">
+                    <h2 class="card_title">Auberge La Canebière</h2>
+                    <p class="card_price">Nuit à partir de <span>25€</span></p>
                     <div class="stars">
-                      <img src="assets/icons/star.svg" alt="star">
-                      <img src="assets/icons/star.svg" alt="star">
-                      <img src="assets/icons/star.svg" alt="star">
-                      <img src="assets/icons/star.svg" alt="star">
-                      <img src="assets/icons/greystar.svg" alt="star">
+                      <i class="fas fa-solid fa-star"></i>
+                      <i class="fas fa-solid fa-star"></i>
+                      <i class="fas fa-solid fa-star"></i>
+                      <i class="fas fa-solid fa-star"></i>
+                      <i class="fas fa-solid fa-star"></i>
                     </div>
                   </div>
-                </div>
-              </a>
-              <a href="#">
-                <div class="card vertical_card">
-                  <div class="vertical_card_img"></div>
-                  <div class="vertical_card_info">
-                    <h2 class="card_title">Hôtel Le soleil du matin</h2>
-                    <p class="card_price">Nuit à partir de <span>128€</span></p>
+                </a>
+              </article>
+              <article class="card">
+                <a class="card_link" href="#">
+                  <img src="assets/img/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="" class="card_img">
+                  <div class="card_info">
+                    <h2 class="card_title">Hôtel du port</h2>
+                    <p class="card_price">Nuit à partir de <span>52€</span></p>
                     <div class="stars">
-                      <img src="assets/icons/star.svg" alt="star">
-                      <img src="assets/icons/star.svg" alt="star">
-                      <img src="assets/icons/star.svg" alt="star">
-                      <img src="assets/icons/star.svg" alt="star">
-                      <img src="assets/icons/greystar.svg" alt="star">
+                      <i class="fas fa-solid fa-star"></i>
+                      <i class="fas fa-solid fa-star"></i>
+                      <i class="fas fa-solid fa-star"></i>
+                      <i class="fas fa-solid fa-star"></i>
+                      <i class="fas fa-solid fa-star"></i>
                     </div>
                   </div>
-                </div>
-              </a>
-              <a href="#">
-                <div class="card vertical_card">
-                  <div class="vertical_card_img"></div>
-                  <div class="vertical_card_info">
-                    <h2 class="card_title">Hôtel Le soleil du matin</h2>
-                    <p class="card_price">Nuit à partir de <span>128€</span></p>
+                </a>
+              </article>
+              <article class="card">
+                <a class="card_link" href="#">
+                  <img src="assets/img/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="" class="card_img">
+                  <div class="card_info">
+                    <h2 class="card_title">Hôtel Les mouettes</h2>
+                    <p class="card_price">Nuit à partir de <span>76€</span></p>
                     <div class="stars">
-                      <img src="assets/icons/star.svg" alt="star">
-                      <img src="assets/icons/star.svg" alt="star">
-                      <img src="assets/icons/star.svg" alt="star">
-                      <img src="assets/icons/star.svg" alt="star">
-                      <img src="assets/icons/greystar.svg" alt="star">
+                      <i class="fas fa-solid fa-star"></i>
+                      <i class="fas fa-solid fa-star"></i>
+                      <i class="fas fa-solid fa-star"></i>
+                      <i class="fas fa-solid fa-star"></i>
+                      <i class="fas fa-solid fa-star"></i>
                     </div>
                   </div>
-                </div>
-              </a>
-              <a href="#">
-                <div class="card vertical_card">
-                  <div class="vertical_card_img"></div>
-                  <div class="vertical_card_info">
-                    <h2 class="card_title">Hôtel Le soleil du matin</h2>
-                    <p class="card_price">Nuit à partir de <span>128€</span></p>
+                </a>
+              </article>
+              <article class="card">
+                <a class="card_link" href="#">
+                  <img src="assets/img/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="" class="card_img">
+                  <div class="card_info">
+                    <h2 class="card_title">Hôtel de la mer</h2>
+                    <p class="card_price">Nuit à partir de <span>46€</span></p>
                     <div class="stars">
-                      <img src="assets/icons/star.svg" alt="star">
-                      <img src="assets/icons/star.svg" alt="star">
-                      <img src="assets/icons/star.svg" alt="star">
-                      <img src="assets/icons/star.svg" alt="star">
-                      <img src="assets/icons/greystar.svg" alt="star">
+                      <i class="fas fa-solid fa-star"></i>
+                      <i class="fas fa-solid fa-star"></i>
+                      <i class="fas fa-solid fa-star"></i>
+                      <i class="fas fa-solid fa-star"></i>
+                      <i class="fas fa-solid fa-star"></i>
                     </div>
                   </div>
-                </div>
-              </a>
-              <a href="#">
-                <div class="card vertical_card">
-                  <div class="vertical_card_img"></div>
-                  <div class="vertical_card_info">
-                    <h2 class="card_title">Hôtel Le soleil du matin</h2>
-                    <p class="card_price">Nuit à partir de <span>128€</span></p>
+                </a>
+              </article>
+              <article class="card">
+                <a class="card_link" href="#">
+                  <img src="assets/img/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="" class="card_img">
+                  <div class="card_info">
+                    <h2 class="card_title">Hôtel Le Panier</h2>
+                    <p class="card_price">Nuit à partir de <span>23€</span></p>
                     <div class="stars">
-                      <img src="assets/icons/star.svg" alt="star">
-                      <img src="assets/icons/star.svg" alt="star">
-                      <img src="assets/icons/star.svg" alt="star">
-                      <img src="assets/icons/star.svg" alt="star">
-                      <img src="assets/icons/greystar.svg" alt="star">
+                      <i class="fas fa-solid fa-star"></i>
+                      <i class="fas fa-solid fa-star"></i>
+                      <i class="fas fa-solid fa-star"></i>
+                      <i class="fas fa-solid fa-star"></i>
+                      <i class="fas fa-solid fa-star"></i>
                     </div>
                   </div>
-                </div>
-              </a>
-              <a href="#">
-                <div class="card vertical_card">
-                  <div class="vertical_card_img"></div>
-                  <div class="vertical_card_info">
-                    <h2 class="card_title">Hôtel Le soleil du matin</h2>
-                    <p class="card_price">Nuit à partir de <span>128€</span></p>
+                </a>
+              </article>
+              <article class="card">
+                <a class="card_link" href="#">
+                  <img src="assets/img/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="" class="card_img">
+                  <div class="card_info">
+                    <h2 class="card_title">Hôtel Chez Amina</h2>
+                    <p class="card_price">Nuit à partir de <span>96€</span></p>
                     <div class="stars">
-                      <img src="assets/icons/star.svg" alt="star">
-                      <img src="assets/icons/star.svg" alt="star">
-                      <img src="assets/icons/star.svg" alt="star">
-                      <img src="assets/icons/star.svg" alt="star">
-                      <img src="assets/icons/greystar.svg" alt="star">
+                      <i class="fas fa-solid fa-star"></i>
+                      <i class="fas fa-solid fa-star"></i>
+                      <i class="fas fa-solid fa-star"></i>
+                      <i class="fas fa-solid fa-star"></i>
+                      <i class="fas fa-solid fa-star"></i>
                     </div>
                   </div>
-                </div>
-              </a>
+                </a>
+              </article>
             </div>
             <button type="button" name="button" class="title btn_none">Afficher plus</button>
+          </div>
 
+          <div class="trend">
+            <div class="trend_title">
+              <h2 class="title_section">Les plus populaires</h2>
+              <i class="fas fa-solid fa-chart-line trend_icon"></i>
+            </div>
+            <div class="card_container">
+              <article class="card horizontal_card">
+                <a class="card_link horizontal_card_link" href="#">
+                  <img src="assets/img/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="" class="card_img">
+                  <div class="card_info">
+                    <h2 class="card_title">Hôtel Le soleil du matin</h2>
+                    <p class="card_price">Nuit à partir de <span>128€</span></p>
+                    <div class="stars">
+                      <i class="fas fa-solid fa-star"></i>
+                      <i class="fas fa-solid fa-star"></i>
+                      <i class="fas fa-solid fa-star"></i>
+                      <i class="fas fa-solid fa-star"></i>
+                      <i class="fas fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                </a>
+              </article>
+              <article class="card horizontal_card">
+                <a class="card_link horizontal_card_link" href="#">
+                  <img src="assets/img/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="" class="card_img">
+                  <div class="card_info">
+                    <h2 class="card_title">Chambres d’hôtes Au cœur de l’eau</h2>
+                    <p class="card_price">Nuit à partir de <span>71€</span></p>
+                    <div class="stars">
+                      <i class="fas fa-solid fa-star"></i>
+                      <i class="fas fa-solid fa-star"></i>
+                      <i class="fas fa-solid fa-star"></i>
+                      <i class="fas fa-solid fa-star"></i>
+                      <i class="fas fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                </a>
+              </article>
+              <article class="card horizontal_card">
+                <a class="card_link horizontal_card_link" href="#">
+                  <img src="assets/img/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="" class="card_img">
+                  <div class="card_info">
+                    <h2 class="card_title">Hôtel Le soleil du matin</h2>
+                    <p class="card_price">Nuit à partir de <span>68€</span></p>
+                    <div class="stars">
+                      <i class="fas fa-solid fa-star"></i>
+                      <i class="fas fa-solid fa-star"></i>
+                      <i class="fas fa-solid fa-star"></i>
+                      <i class="fas fa-solid fa-star"></i>
+                      <i class="fas fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                </a>
+              </article>
+            </div>
           </div>
         </div>
 
       </section>
 
       <section id="activities">
-        <h1 class="title_section">
+        <h2 class="title_section">
           Activités à <span>Marseille</span>
-        </h1>
+        </h2>
         <div class="result_activities">
           <div class="card_container">
-            <a href="#">
-              <div class="card vertical_card">
-                <div class="vertical_card_img"></div>
-                <div class="vertical_card_info">
-                  <h2 class="card_title">Vieux-Port</h2>
-                </div>
-              </div>
-            </a>
-            <a href="#">
-              <div class="card vertical_card">
-                <div class="vertical_card_img"></div>
-                <div class="vertical_card_info">
-                  <h2 class="card_title">Vieux-Port</h2>
-                </div>
-              </div>
-            </a>
-
-            <a href="#">
-              <div class="card vertical_card">
-                <div class="vertical_card_img"></div>
-                <div class="vertical_card_info">
-                  <h2 class="card_title">Vieux-Port</h2>
-                </div>
-              </div>
-            </a>
-            <a href="#">
-              <div class="card vertical_card">
-                <div class="vertical_card_img"></div>
-                <div class="vertical_card_info">
-                  <h2 class="card_title">Vieux-Port</h2>
-                </div>
-              </div>
-            </a>
+            <article class="activities_card">
+              <a class="activities_card_link" href="#">
+                <img src="assets/img/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="" class="activities_card_img">
+                <h2 class="card_title">Vieux-Port</h2>
+              </a>
+            </article>
+            <article class="activities_card">
+              <a class="activities_card_link" href="#">
+                <img src="assets/img/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="" class="activities_card_img">
+                <h2 class="card_title">Fort de Pomègues</h2>
+              </a>
+            </article>
+            <article class="activities_card">
+              <a class="activities_card_link" href="#">
+                <img src="assets/img/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="" class="activities_card_img">
+                <h2 class="card_title">Parc national des Calanques</h2>
+              </a>
+            </article>
+            <article class="activities_card">
+              <a class="activities_card_link" href="#">
+                <img src="assets/img/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="" class="activities_card_img">
+                <h2 class="card_title">Notre-Dame-de-la-Garde</h2>
+              </a>
+            </article>
           </div>
         </div>
       </section>
