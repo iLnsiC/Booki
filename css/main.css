@@ -382,7 +382,7 @@ footer ul li {
 }
 
 /* tablette style */
-@media only screen and (max-width: 992px) {
+@media only screen and (max-device-width: 992px) {
   /* horizontal card set-up */
   .horizontal_card{
     width: calc(100% / 3 - 10px);
@@ -431,7 +431,7 @@ footer ul li {
 }
 
 /* Phone Style */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-device-width: 768px) {
   /* main style */
   section > * {
     margin: 0 20px;
