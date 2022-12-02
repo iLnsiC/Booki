@@ -359,7 +359,7 @@ nav{
   font-size: 15px;
 }
 .trend .card_container{
-  height: -webkit-fill-available;
+  height: 100%;
 }
 /* activities style */
 .result_activities{
