@@ -175,21 +175,21 @@ a > *,
 iframe{
   border: 0;
   margin: 0;
-  overflow: none;
+  overflow: hidden;
 }
 .mapouter {
-  position:relative;
-  text-align:right;
-  height:500px;
-  width:auto;
+  position: relative;
+  text-align: right;
+  height: 500px;
+  width: auto;
   max-width: 600px;
   display: none; /* hide map for a toggle */
 }
 .gmap_canvas {
-  overflow:hidden;
-  background:none!important;
-  height:500px;
-  width:auto;
+  overflow: hidden;
+  background: none!important;
+  height: 500px;
+  width: auto;
 }
 .gmap_canvas iframe{
   height: 100%;
