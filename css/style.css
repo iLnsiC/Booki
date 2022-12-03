@@ -365,6 +365,9 @@ nav{
 .result_activities{
   margin-top: 30px;
 }
+.activities_card{
+  border: none;
+}
 
 /* Footer style */
 footer{
